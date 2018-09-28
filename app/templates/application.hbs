@@ -1,5 +1,17 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<p data-test-t-user-edit-title>
+  {{t 'user.edit.title'}}
+</p>
+
+<p data-test-t-user-followers-title-one>
+  {{t 'user.followers.title' count=1}}
+</p>
+
+<p data-test-t-user-followers-title-two>
+  {{t 'user.followers.title' count=2}}
+</p>
+
+<button data-test-t-add-user>
+  {{t 'button.add_user.title'}}
+</button>
 
 {{outlet}}
